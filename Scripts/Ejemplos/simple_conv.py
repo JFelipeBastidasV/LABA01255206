@@ -4,6 +4,9 @@ code taken from https://github.com/adeveloperdiary/blog/tree/master/Computer_Vis
 blog http://www.adeveloperdiary.com/data-science/computer-vision/how-to-implement-sobel-edge-detection-using-python-from-scratch/
 
 Modified by Benjamin Valdes
+
+Modified by Jesus Felipe Bastidas Valenzuela A01255206
+Modified date: 19 de Marzo del 2025
 """
 
 import numpy as np
@@ -19,7 +22,7 @@ def conv_helper(fragment, kernel):
     for row in range(f_row):
         for col in range(f_col):
             result += fragment[row,col] *  kernel[row,col]
-    return result
+    return resultcmd
 
 def convolution(image, kernel):
     """Aplica una convolucion sin padding (valida) de una dimesion 
